@@ -1,0 +1,5 @@
+-Credits slide should include location of presentation source and also credit creator of original template as per CC attribution licence.
+-Add the following explanatory slides:
+    Alternatives: Explain why existing stuff like this doesn't work.
+    Git: More details on why Git works/cases where it doesn't work.
+    Scripts: What exactly are the shell scripts I've written/what do they do.
