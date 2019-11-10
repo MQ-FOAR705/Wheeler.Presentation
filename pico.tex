@@ -72,7 +72,7 @@
   % LOGO
   \begin{columns}[t, totalwidth=\textwidth]
   \begin{column}[c]{1.05cm}
-     \includegraphics[width=1cm]{figure/logo1.png}
+     %\includegraphics[width=1cm]{figure/logo1.png}
   \end{column}
   % TITLE
    \begin{column}[c]{10.6cm}
@@ -84,7 +84,7 @@
   % PICTURE
   \begin{column}[c]{1.15cm}
     \hspace{0.005cm}
-    \includegraphics[width=1cm]{figure/figure1.png}
+    %\includegraphics[width=1cm]{figure/figure1.png}
   \end{column}
   \end{columns}
   {\color{slfcolor}\hrule height 1pt\vspace{0.1cm}}
@@ -147,8 +147,8 @@
     
      
 \Acrobatmenu{FullScreenPrefs}{\vspace{0.3cm}\hspace{0.24cm}\mbox{%
-      \includegraphics[height=0.04\textheight,keepaspectratio]{%
-	  figure/CreativeCommons_Attribution_License.eps}%
+      %\includegraphics[height=0.04\textheight,keepaspectratio]{%
+	  %figure/CreativeCommons_Attribution_License.eps}%
 	  }}
    }
     \vspace{0.05cm}
@@ -167,24 +167,35 @@
 \usebeamerfont{bodytext}
 
 
-\parbox{\linewidth}{
-
-Original template: https://github.com/snowtechblog/pico-latex-presentation by Anselm Köhler
 
 
-\vspace{12pt}
+%Original template: https://github.com/snowtechblog/pico-latex-presentation by Anselm Köhler
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet posuere dolor. Morbi at hendrerit justo, congue pulvinar nulla. Donec rhoncus leo fermentum lacus molestie, quis bibendum velit commodo. Nullam vel leo in sem ultricies malesuada. Aenean mauris dui, varius quis nulla eget, facilisis eleifend felis. Etiam arcu ligula, eleifend et augue nec, mollis tristique sem. Mauris lobortis consequat mauris. Quisque quis sollicitudin felis.
+\begin{columns}
+    \begin{column}{0.4\textwidth}
+    \parbox{\linewidth}{
+    \textbf{The Problem:}
 
- \vspace{12pt}
- 
-In pellentesque nunc eu risus euismod, id blandit quam hendrerit. Etiam ultrices leo ut lorem posuere tempus. Mauris semper a metus vitae suscipit. Integer malesuada mollis quam ut porta. Integer non ligula tempor, tincidunt nulla ac, aliquam elit. Morbi viverra mi ac mi ullamcorper imperdiet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque aliquet mattis porta. Nunc non vulputate lorem. Sed ut volutpat neque. Ut ut tellus ac dui dignissim mattis. Suspendisse lacus turpis, finibus et leo at, maximus aliquam nunc. Nulla eget nisi efficitur, egestas eros molestie, pharetra purus. Integer sodales neque sit amet porttitor tempus. Mauris rutrum eget leo a laoreet.
+    \vspace{12pt}
 
- \vspace{12pt}
- 
-Praesent dolor nibh, malesuada quis convallis sit amet, volutpat at purus. Suspendisse sed velit quis turpis venenatis fermentum ut sed tellus. Ut eu lacus ultricies, elementum ex gravida, gravida elit. Donec gravida nisl sit amet nulla vestibulum, in malesuada diam varius. Donec sodales efficitur nulla, non tincidunt nibh commodo nec. 
-}
+    Keeping music production projects
+    
+    organised is hard because:
+    \begin{itemize}
+        \item Need to have many versions of the same thing.
+        \item Metaprojects are a thing.
+        \item Need documentation, especially in research contexts.
+        \item Need to work quickly and intuitively.
+    \end{itemize}
+    }
+    \end{column}
 
+    \begin{column}{0.5\textwidth}
+    \includegraphics[width=1\textwidth,height=0.45\textheight,keepaspectratio]{figure/clutter-folder.png}
+    \vspace{4pt}
+    \includegraphics[width=1\textwidth,height=0.45\textheight,keepaspectratio]{figure/clutter-project.png}
+    \end{column}
+\end{columns}
 
    
 \end{frame}
