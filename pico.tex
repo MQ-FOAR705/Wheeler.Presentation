@@ -135,9 +135,9 @@
     \tocbuttoncolor{minor}
     \hspace{\buttonspacingfootline}
       \hyperlink{minor}{\beamerbutton{Section 5}}
-    \tocbuttoncolor{conclusion}
+    \tocbuttoncolor{credits}
     \hspace{\buttonspacingfootline}
-      \hyperlink{conclusion}{\beamerbutton{Conclusion}}
+      \hyperlink{credits}{\beamerbutton{Credits}}
     % this last one should normaly not be used... it will open the preferences to change the 
     % behaviour of the acrobat reader in fullscreen -> usefull in pico...
     \setbeamercolor{button}{bg=white,fg=black}
@@ -201,31 +201,15 @@
 \end{frame}
 
 \begin{frame}\label{\secvariable}
-  \begin{columns}[t]
-  %https://tex.stackexchange.com/a/7452/5483
-  \begin{column}[c]{0.45\textwidth}
-%http://lorempixel.com/1200/800/cats/Figure2/     
-%http://lorempixel.com/1200/800/cats/Figure3/
-\includegraphics[width=1\textwidth,height=0.5\textheight,keepaspectratio]{%
-figure/logo1.png}\\
-\vspace{12pt}
-\includegraphics[width=1\textwidth,height=0.5\textheight,keepaspectratio]{%
-figure/figure1.png}
-    \end{column}
-    \begin{column}[c]{0.45\textwidth}
-    \parbox{\linewidth}{
-
-      Integer dictum condimentum elit ac placerat. Duis vitae ex nec mauris iaculis maximus. Aliquam est velit, imperdiet placerat velit elementum, fringilla fringilla tortor. Nunc tempus vulputate leo, ac commodo dolor mattis ullamcorper. Donec elementum dapibus justo ut vestibulum. 
-      
-      \vspace{12pt}
-      
-      Phasellus aliquam porta justo, et accumsan libero tristique quis. Aenean vel risus accumsan, feugiat lorem vel, placerat.
-      }
-    \end{column}
-    
-  \end{columns}
-
-  
+\parbox{\linewidth}{
+\textbf{The Solution:}
+\begin{itemize}
+    \item Take some time to actually think about project organisation.
+    \item Use version control. In this case Git. Solutions built specifically for music production were found to be unsuitable. Git actually works very well with just a couple of caveats.
+    \item Write some custom scripts to handle some aspects of project creation and management. These integrate with Git.
+    \item Actually use the tools.
+\end{itemize}
+}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -388,7 +372,7 @@ Maecenas nec accumsan nunc. Aenean pretium nulla augue, sit amet volutpat leo co
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\mysection{conclusion}
+\mysection{credits}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}\label{\secvariable}
   
