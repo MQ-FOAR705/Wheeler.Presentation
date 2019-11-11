@@ -119,22 +119,23 @@
   \centering \mbox{
     \tocbuttoncolor{abstract}
     \hyperlink{abstract}{\beamerbutton{2 Minute Madness}}
-    \tocbuttoncolor{radar}
+    \tocbuttoncolor{alternatives}
     \hspace{\buttonspacingfootline}
-      \hyperlink{radar}{\beamerbutton{Section 1}}
+      \hyperlink{alternatives}{\beamerbutton{Alternatives}}
 
-    \tocbuttoncolor{line}
+    \tocbuttoncolor{git}
     \hspace{\buttonspacingfootline}
-      \hyperlink{line}{\beamerbutton{Section 2}}
-    \tocbuttoncolor{major}
+      \hyperlink{line}{\beamerbutton{Git}}
+    \tocbuttoncolor{git}
     \hspace{\buttonspacingfootline}
-      \hyperlink{major}{\beamerbutton{Section 3}}
-    \tocbuttoncolor{slab}
-    \hspace{\buttonspacingfootline}
-      \hyperlink{slab}{\beamerbutton{Section 4}}
-    \tocbuttoncolor{minor}
-    \hspace{\buttonspacingfootline}
-      \hyperlink{minor}{\beamerbutton{Section 5}}
+    \tocbuttoncolor{scripts}
+      \hyperlink{scripts}{\beamerbutton{Scripts}}
+%    \tocbuttoncolor{slab}
+%    \hspace{\buttonspacingfootline}
+%      \hyperlink{slab}{\beamerbutton{Section 4}}
+%    \tocbuttoncolor{minor}
+%    \hspace{\buttonspacingfootline}
+%      \hyperlink{minor}{\beamerbutton{Section 5}}
     \tocbuttoncolor{credits}
     \hspace{\buttonspacingfootline}
       \hyperlink{credits}{\beamerbutton{Credits}}
@@ -213,59 +214,41 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\mysection{radar}
+\mysection{alternatives}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}\label{\secvariable}
-  \begin{columns}[t]
-  %https://tex.stackexchange.com/a/7452/5483
-    \begin{column}[c]{0.45\textwidth}
-    \parbox{\linewidth}{
-
-      Donec dignissim vel ligula a sollicitudin. Donec rutrum faucibus dictum. Quisque in pellentesque massa. Aliquam mi lectus, facilisis sit amet dignissim vitae, porta vitae elit. Nulla nulla nunc, consectetur a blandit nec, aliquam ultrices dolor. Duis pellentesque urna ut sem lobortis maximus.
-      
-      \vspace{12pt}
-      
-	  Some extra words demonstrating a paragraph. The quick brown fox jumps over the lazy dog.
-      }
-    \end{column}
-    \begin{column}[c]{0.45\textwidth}
-%http://lorempixel.com/1200/800/cats/Figure2/     
-%http://lorempixel.com/1200/800/cats/Figure3/
-\includegraphics[width=1\textwidth,height=0.5\textheight,keepaspectratio]{%
-figure/figure2.png}\\
+\parbox{\linewidth}{
+\textbf{Existing Alternatives Were Unsuitable}
 \vspace{12pt}
-\includegraphics[width=1\textwidth,height=0.5\textheight,keepaspectratio]{%
-figure/figure3.png}
-    \end{column}
-  \end{columns}
-
-  
+\begin{itemize}
+    \item Built in DAW "version control" tools earn their scare quotes. Not reliable.
+    \vspace{12pt}
+    \item There are a couple of online platforms for managing music production projects, including version control BUT:
+    \begin{enumerate}
+        \item They only support some DAWs, this solution will work with any.
+        \item I don't trust them.
+    \end{enumerate}
+\end{itemize}
+}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\mysection{line}
+\mysection{Git}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}\label{\secvariable}
-\begin{center}
-  \vspace{-0.5cm}
-  %http://lorempixel.com/1200/800/cats/Figure4/
- \includegraphics[width=1\textwidth,height=0.75\textheight,keepaspectratio]{%
-  figure/figure4.png}
-\end{center}
-  \vspace{-0.5cm}
-  \begin{enumerate}[(a)]
-  
-  
-  \item Morbi vehicula ornare augue vitae porttitor.
-  \item Donec porttitor, nibh id pretium euismod,
-  \end{enumerate}
-
-  $\quad \Rightarrow$ Aliquam et turpis eget lacus finibus congue.
-  
+\parbox{\linewidth}{
+    \textbf{Overall Git works well to version control music production projects, BUT:}
+    \begin{itemize}
+        \item The actual audio files are large and USUALLY don't change after creation. Tell Git to ignore them.
+        \item On rare occasions producers might destructively edit audio files. Git cannot help you in this case (assuming you've ignored the audio files).
+        \item The project files have proprietary formats. You can't do the kind of useful version comparisons you might be able to do with code or text files. A tool that COULD compare (e.g.) EQ settings between different versions of a project would be enormously useful, but obviously well beyond the scope of this unit to develop.
+        \item If you're using a DAW that allows you to save your project as one big file that includes both the project settings and audio data, don't do that.
+    \end{itemize}
+}  
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\mysection{major}
+\mysection{scripts}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}\label{\secvariable} %%Eine Folie
 \begin{center}
